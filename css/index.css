@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+@media (max-width: 767px) {
+
+	.logo {
+		text-align: center;
+		margin: 5px;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.menu {
+    	display: none;
+  	}
+
+	.hamburger {
+		color: white;
+		background-color: dimgray;
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 5px
+	}
+
+	.product {
+		border: 1px solid lightgray;
+		border-radius: 5px;
+		padding: 8px;
+		display: flex;
+		flex-direction: column;
+  		align-items: center;
+  		margin: 5px
+    }
+
+    .social {
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-around;
+    	list-style: none;
+    	border: 1px solid lightgray;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	header {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.logo {
+		margin-left: 10%;
+		margin-top: 10px;
+	}
+
+	h1 {
+		text-align: center;
+		margin-left: 20%
+	}
+
+	.menu {
+    	display: none;
+  	}
+
+	.hamburger {
+		color: white;
+		background-color: dimgray;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.product {
+		border: 1px solid dimgray;
+		border-radius: 5px;
+		padding: 8px;
+		display: flex;
+		flex-direction: column;
+  		align-items: center;
+  		margin: 5% ;
+    }
+
+    .social {
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-around;
+    	list-style: none;
+    }
+}
+
+@media (min-width: 1025px) {
+
+	header {
+		display: flex;
+		flex-direction: row;
+		margin-top: 2%;
+	}
+
+
+	.logo {
+		margin-left: 10%;
+		margin-top: 10px;
+	}
+
+	h1 {
+		text-align: center;
+		margin-left: 20%
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.menu {
+    	display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		background: dimgray;
+		list-style: none;
+		color: white
+  	}
+
+  	.menu > li {
+  		padding-top: 15px;
+  		padding-bottom: 15px;
+  		padding-left: 15px;
+  		padding-right: 15px;
+  	}
+
+	main {
+   		display: flex;
+    	flex-direction: row;
+ 	}
+
+	.product {
+		border: 1px solid dimgray;
+		border-radius: 5px;
+		padding: 8px;
+		display: flex;
+		flex-direction: column;
+  		align-items: center;
+  		margin: 5px ;
+  		width: 33%;
+    }
+
+    .product > i {
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: center;
+    }
+
+    .social {
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-around;
+    	list-style: none;
+    	border: 1px solid lightgray;
+    }
+}
